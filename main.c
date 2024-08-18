@@ -1,24 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
-// 1. In ra màn hình các số chẵn trong đoạn
+
 int main()
 {
+    int nam, sinh, tuoi;
+   /* int nam = 2024;
+    int sinh = 2009;
+    int tuoi = nam - sinh;
+    //tính tuổi
+    // công thức: năm hiện tại - năm sinh
+    printf("nam nay ban %d tuoi\n", tuoi);
+    // bài này hard-code
+    //không tối ưu
+    //năm sinh năm hiện tại bị cố định không phù hợp cho người dùng
+    //không có nhập từ bàn phím*/
 
-    int start, end, tam;
-    printf("Input start: ");
-    scanf("%d", &start);
-    printf("Input end: ");
-    scanf("%d", &end);
-    if (start > end)
-    {
-        tam = start;
-        start = end;
-        end = tam;
-    }
-    for(int i = start + 1; i < end; i++){
-        if (i % 2 == 0){
-            printf("%d ", i);
-        }
-    }
+
+    printf("nhap nam hien tai: ");
+    scanf("%d/n", &nam);
+    printf("nhap nam sinh: ");
+    scanf("%d/n", &sinh);
+    tuoi = nam - sinh;
+    printf("nam nay ban %d tuoi", tuoi);
+    // cach viet moi thuan tien, tien dung hon
+
     return 0;
 }
